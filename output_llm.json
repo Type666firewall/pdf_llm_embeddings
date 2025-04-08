@@ -1,0 +1,65 @@
+{
+    "id": "file_id",
+    "metadata": {
+      "tecnico": {
+        "filename": "nome_file",
+        "filetype": "pdf",
+        "dimensione": "3MB",
+        "data_creazione": "2024-05-01",
+        "data_elaborazione": "oggi",
+        "origine": "digitale",
+        "pagine": 10,
+        "checksum": "sha256:xyz123..."
+      },
+      "contestuale": {
+        "titolo": "Studio sul cambiamento climatico",
+        "autori": ["Giulia Verdi", "Marco Rossi"],
+        "lingua": "it",
+        "tipo_documento": "Articolo di ricerca"
+      },
+      "embedding": {
+        "valore": [0.1234, 0.5678, 0.91011, ...],
+        "metodo": "llm_embeddings",
+        "dimensione": 512
+      }
+    },
+    "contenuto": {
+      "estratti": {
+        "testo_raw": "Lo studio esplora gli effetti del cambiamento climatico sul livello del mare...",
+        "metodo_estrazione": "Mock-LLM"
+      },
+      "analisi_llm": {
+        "riassunto": "Lo studio analizza l'impatto delle variazioni del livello del mare sulle coste...",
+        "parole_chiave": ["cambiamento climatico", "livello del mare", "coastal impact"],
+        "entita": {
+          "persone": ["Giulia Verdi", "Marco Rossi"],
+          "luoghi": ["Mediterraneo", "Italia"],
+          "date": ["2024-05-01"]
+        },
+        "categorie": ["Ambiente", "Ricerca", "Cambiamento Climatico"],
+        "score_rilevanza": 5,
+        "clausole_critiche": [
+          "Impatto delle emissioni di CO2",
+          "Previsioni sul livello del mare"
+        ]
+      }
+    },
+    "tracciabilita": {
+      "percorsi": {
+        "originale": "pdf_path",
+        "json": "CARTELLA_JSON/file_id.json",
+        "estratti": "CARTELLA_JSON/file_id.txt",
+        "backup": "s3://archivio-backup/2024/05/nome_file"
+      },
+      "log": [
+        {
+          "timestamp": "oggi",
+          "evento": "mock_elaborazione_llm",
+          "status": "completato",
+          "modello": "mock-llm",
+          "tempo_esecuzione": "0.2s"
+        }
+      ]
+    }
+  }
+  
